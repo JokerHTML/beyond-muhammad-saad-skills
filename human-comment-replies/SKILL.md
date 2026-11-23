@@ -1,9 +1,10 @@
 ---
 name: human-comment-replies
-description: Write comment replies that read like a real, sharp, caring human wrote them — anti-AI hard fails, language matching, voice options, difficult comments, and a single cap/queue rule.
-version: 1.0.0
+description: Reply to comments like a real human, not a chatbot — anti-AI hard fails, language matching, and a first-hour protocol that turns commenters into a community.
+version: 1.1.0
 author: Muhammad Saad Ranjha (Beyond Muhammad Saad)
 created: 2026-11-23
+updated: 2026-11-23
 ---
 
 # Human Comment Replies
@@ -53,10 +54,12 @@ Hard fails under every voice (rewrite before sending): template phrasing ("I'd l
 
 ## Before / After Examples
 
+Every good reply below passes all 6 hard fails, including no em-dash. If you spot a good example that breaks one, the example is wrong, not the rule — fix the example.
+
 **Example 1 — detailed question.**
 Comment: *"Does this work for someone with zero audience? I posted for a month and got nothing."*
 Bad: "Great question! Thanks for asking! Consistency is key in today's fast-paced world — keep going and you'll see results!"
-Good: "A month of posting with zero audience is the hardest stretch — most people quit right there. What were you posting, tips or your own work? The own-work posts are the ones that usually start the replies."
+Good: "A month of posting with zero audience is the hardest stretch. Most people quit right there. What were you posting, tips or your own work? The own-work posts are the ones that usually start the replies."
 Why: the good reply names their exact situation (a month, zero audience), asks one real question, adds one concrete point — and stops.
 
 **Example 2 — short praise in Roman Urdu.**
@@ -68,8 +71,8 @@ Why: same language, references their exact words ("first client wala part"), sho
 **Example 3 — wrong claim, corrected kindly.**
 Comment: *"You have to post 5 times a day or the algorithm kills you."*
 Bad: "Excellent point! Actually, in today's fast-paced world, posting frequency matters a lot — here are 5 reasons why…"
-Good: "That one's a myth — there's no fixed number. One solid post that gets replies beats five that nobody answers. I post once a day and that's enough to keep the thread going."
-Why: corrects with a plain claim, gives the counter-evidence in one line, no condescension, no pile-on.
+Good: "That one is a myth. There is no fixed number. One solid post that gets replies beats five that nobody answers."
+Why: corrects with a plain claim, gives the counter-evidence in one line, no condescension, no pile-on. It asserts no posting cadence of its own — do not copy a cadence claim into a reply unless it is true for your account.
 
 ## Substance Rules
 
