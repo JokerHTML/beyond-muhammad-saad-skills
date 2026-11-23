@@ -1,9 +1,10 @@
 ---
 name: facebook-instagram-scheduling
-description: Schedule Facebook Page posts from the native composer or CLI and publish Instagram posts via a duplicate-guarded timed CLI run — with exact time formats, limits, and verify-before-retry rules.
-version: 1.0.0
+description: Schedule Facebook and Instagram posts free — native composer and CLI routes, exact times, duplicate guards, and live verification, so no slot goes out twice or at the wrong hour.
+version: 1.1.0
 author: Muhammad Saad Ranjha (Beyond Muhammad Saad)
 created: 2026-11-23
+updated: 2026-11-23
 ---
 
 # Facebook + Instagram Scheduling
@@ -38,7 +39,7 @@ Every scheduled time is recorded in all four forms before it is used. No excepti
 - **Facebook CLI** (`facebook-cli pages posts create`, `pages drafts publish`): `--scheduled-publish-time <Unix seconds>`. Window: **10 minutes to 29 days ahead**. Unix seconds are timezone-agnostic once converted — convert from the local time in the slot's IANA timezone, and record the UTC equivalent alongside so the conversion is checkable. Reschedule with `pages posts reschedule` (same Unix-seconds value, new time); cancel with `pages posts cancel-schedule` (post must be more than 5 minutes from publishing).
 - **Instagram CLI** (`instagram-cli post-feed`, `instagram-cli post-story`): `--publish-at <RFC 3339 with explicit offset>`, for example `2026-10-17T15:30:00-07:00`. Omit the flag to publish immediately. No minimum lead time is documented for this CLI — schedule at least 10 minutes out as house practice, matching the Facebook floor, so the timed run and any approval step have margin. A time without an offset is rejected: always include it.
 - **Facebook composer / Meta Business Suite UI:** times are picked in the timezone the browser shows for the account. Suite allows scheduling **20 minutes to 29 days ahead** (UI floor is 20 minutes; the CLI floor is 10 — the difference is real, use the floor of the route you are on). Confirm the timezone shown in the picker matches the slot's IANA timezone before saving.
-- **Conversion check (run it, do not trust mental arithmetic):** `TZ='<IANA timezone>' date -d '<local date time>' '+%Y-%m-%dT%H:%M:%S%z -> unix %s'` and `date -d '<local date time><offset>' -u '+%Y-%m-%dT%H:%M:%SZ'`. Both outputs must agree with the recorded UTC equivalent before the time is used.
+- **Conversion check (run it, do not trust mental arithmetic):** `TZ='<IANA timezone>' date -d '<local date time>' '+%Y-%m-%dT%H:%M:%S%z -> unix %s'` and `date -d '<local date time><offset>' -u '+%Y-%m-%dT%H:%M:%SZ'`. Both outputs must agree with the recorded UTC equivalent before the time is used. Re-checked 2026-11-23: 2026-11-25 20:00 Asia/Karachi = Unix `1795618800` = `2026-11-25T15:00:00Z` — the method reproduces exactly.
 
 ---
 
@@ -80,6 +81,7 @@ facebook-cli pages drafts publish --page-id '<page_id>' --draft-id '<draft_id>' 
 - Suite is Meta's own supported scheduler (it schedules Page posts 20 minutes to 29 days ahead and can post to Facebook and Instagram together). It is a legitimate route — **unless its upload or schedule control fails in your environment**. If you have seen Suite's upload button fail repeatedly with no new mechanism, do not keep retrying it: use the composer (3.1) or the CLI (3.2) instead, and revisit Suite only when something has changed (a new browser profile, a new mechanism, or a fix from Meta).
 - Scheduled Page posts live in Suite under Content → Posts and reels → Scheduled tab. That is the visual verification surface for Suite-scheduled slots.
 - Never retry Suite scheduling without a new mechanism, because repeated identical retries have already proved the same failure.
+- Paid Meta One plans extend native scheduling on mobile (reported in 2026 guides, per Meta's Help Center: up to 365 days on Advanced/Expert/Max) — the free 29-day ceiling above is the default. If a slot needs further than 29 days, check the plan before promising the date.
 
 ### 3.4 Owner-device route
 
