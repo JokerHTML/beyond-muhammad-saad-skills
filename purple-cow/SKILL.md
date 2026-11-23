@@ -1,9 +1,10 @@
 ---
 name: purple-cow
-description: Score any Shorts idea for remarkability before you build it — three pass/fail tests and a 0–10 Purple Score that separate a moment nobody has seen from a normal clip with good packaging.
-version: 1.0.0
+description: Score any Shorts idea for remarkability before you build it — three pass/fail tests and a 0–10 Purple Score that separate a moment nobody has ever seen from a normal clip with good packaging. For creators who want ideas worth clicking, not just better titles.
+version: 1.1.0
 author: Muhammad Saad Ranjha (Beyond Muhammad Saad)
 created: 2026-11-23
+updated: 2026-11-23
 ---
 
 # Purple Cow — Remarkability Scoring for Shorts
@@ -29,7 +30,7 @@ This is the companion to a Shorts SEO/packaging skill (titles, hooks, thumbnails
 - **Recommendation** — a working rule derived from the evidence, not evidence itself.
 - **TRANSCRIPT** — a direct quote from the MrBeast interview below, quoted accurately.
 
-**Origin of the concept.** Seth Godin, *Purple Cow: Transform Your Business by Being Remarkable* (Portfolio, 2003) — be remarkable or invisible. MrBeast (Jimmy Donaldson) adopts it as his operating rule for virality: on Theo Von's *This Past Weekend* podcast he explained that a large part of getting 100M+ views on a video is whether it is something someone has seen before or not. The quotes in §1 are from that interview (99.5s clip, circulated via X post by @ryangrowthh).
+**Origin of the concept.** Seth Godin, *Purple Cow: Transform Your Business by Being Remarkable* (Portfolio, 2003) — be remarkable or invisible. MrBeast (Jimmy Donaldson) adopts it as his operating rule for virality: in podcast interviews he explained that a large part of getting 100M+ views on a video is whether it is something someone has seen before or not. The quotes in §1 are his wording, verified against the *Diary of a CEO* transcript (23:02, re-checked 23 Nov 2026); the 99.5s clip circulates via X post by @ryangrowthh. (Round 2 note: an earlier draft attributed the interview exclusively to Theo Von's *This Past Weekend* — the same story appears on *Diary of a CEO* with identical wording, so the show attribution is not settled; the wording is what this skill quotes.)
 
 ## 0. The Honest Tension
 
@@ -135,7 +136,7 @@ Build on your Shorts SEO skill's title formulas. The purple-cow twist is one cha
 - The second half must be the result that breaks the rule ("He Hugged Back", "Zero Stars"), never a generic reaction ("was shocked", "couldn't believe it").
 - Rotate Formula P with your other title formulas (never the same formula twice in a row). Formula P is an additional formula, not a replacement for the others.
 
-**Every new title must keep:** the game name in your channel's locked form · 40–60 chars · creator named · statement, not question · no "!!!", no "…", no hashtag, no emoji · and stay TRUE to the clip (the violation is in the video, §9 gate 2). Read the title aloud: if a viewer who clicked for exactly what it promises would feel shortchanged, rewrite it.
+**Every new title must keep:** the game name in your channel's locked form · 30–60 chars (the pack standard — see your Shorts SEO skill; a shorter specific title is fine, never pad to reach the band) · creator named · statement, not question · no "!!!", no "…", no hashtag, no emoji · and stay TRUE to the clip (the violation is in the video, §9 gate 2). Read the title aloud: if a viewer who clicked for exactly what it promises would feel shortchanged, rewrite it.
 
 ### Worked Examples — Before / After (Worked-Example Layer)
 
@@ -163,7 +164,7 @@ Why it works: the "before" is a driving clip; the "after" is a rule break. The l
 
 | | Title | Chars | Score |
 |---|---|---|---|
-| Before (activity-first) | GTA VI: Kai Cenat Finds a Car in the Junkyard | 44 | **3/10** — N1 + V0 + M0 + P2 |
+| Before (activity-first) | GTA VI: Kai Cenat Finds a Car in the Junkyard | 45 | **3/10** — N1 + V0 + M0 + P2 |
 | After (violation-first) | GTA VI: Kai Cenat's Car Ended Up on the Roof | 44 | **7/10** — N2 + V2 + M1 + P2 |
 
 Why it works — and why it only just passes: the violation is real but small (a physics glitch, not a crossover or a rule break with stakes). 7/10 is the floor, not the goal; a batch needs its 8s and 9s from the bigger beats, not from glitches alone.
@@ -192,7 +193,7 @@ Where Shorts use auto thumbnails, the first frame IS the thumbnail in the feed, 
 |---|---|---|---|
 | Red Hulk hug | GTA VI: IShowSpeed Hugged the Red Hulk — He Hugged Back | HE HUGGED THE RED HULK (5) | The Hulk's arms closing around Speed |
 | Alien baby | GTA VI: Nobody Expected Windah to Steal an Alien Baby | HE STOLE AN ALIEN BABY (5) | The glowing baby on the gurney, red lights |
-| Sheriff crash | GTA VI: Nobody Expected Zero Stars for the Sheriff Crash | ZERO STARS FOR SHERIFF CRASH (4) | The empty wanted-star HUD over the smoking coupe |
+| Sheriff crash | GTA VI: Nobody Expected Zero Stars for the Sheriff Crash | ZERO STARS FOR SHERIFF CRASH (5) | The empty wanted-star HUD over the smoking coupe |
 
 **Gate:** if the thumbnail line could belong to a different video, it is too generic. "HE HUGGED THE RED HULK" belongs to exactly one video in the world. "INSANE GTA MOMENT" belongs to all of them — never use it.
 
@@ -226,7 +227,7 @@ These sit alongside (not instead of) your SEO skill's checklist and your descrip
 |---|---|---|
 | 1. **Idea** | Mine a cleared source by §4 (reaction spike → impossible → rule break → crossover); pick ONE beat; log source link + timestamp. | Cleared source only (§4). No timestamp, no idea. |
 | 2. **Score** | Run Tests A/B/C (§2) and the Purple Score (§3) on the moment + draft title together. Log N/V/M/P and the total. | Total **≥7/10** to build. 5–6: rework the angle (§3) or pick another beat. 0–4: do not build. |
-| 3. **Build** | Cut the layout opening on the violation (§6); write the Formula P title (§5) + description + fresh tags + thumbnail line (§7) + first comment (§8). | Title: game name, 40–60 chars, creator named, statement, true to the clip. Description: your description skill's gates. Tags: fresh, both spellings where they exist, channel tags last. |
+| 3. **Build** | Cut the layout opening on the violation (§6); write the Formula P title (§5) + description + fresh tags + thumbnail line (§7) + first comment (§8). | Title: game name, 30–60 chars, creator named, statement, true to the clip. Description: your description skill's gates. Tags: fresh, both spellings where they exist, channel tags last. |
 | 4. **Verify** | Re-check against the verify sheet: the violation is at the logged timestamp, the quoted words match the transcript, the numbers match the clip, the first frame shows the violation (muted 2-second test). | Hard gates §9, all five. Any fail = fix the cut or the copy, re-score, re-verify. Never ship a failed gate to "fix after publish". |
 | 5. **Publish** | Upload on your fixed schedule (see §11 example: 1/day). First comment at publish +60 min. Read back title/description/tags/playlist/schedule from the details page (never the list view). Log the formula used, the Purple Score, and the 30-day check date. | SEO checklist + description gates + §9 hard gates, all green. If a copy error is found after publish, edit in place — never delete and re-upload to fix copy. |
 
@@ -251,7 +252,7 @@ Scored with §3 (N + V + M + P). All rows are one GTA VI clips channel's real vi
 |---|---|---|---|---|
 | 1 — Normal | Join the crew | GTA VI: Kai Cenat Joins a Crew to Rob Coke Dealers (50) | **3/10** — N1 + V0 + M0 + P2 | Joining a crew to rob dealers is the game's core loop. Every playthrough has this beat. |
 | 2 — Normal | Three banks | GTA VI: Kai Cenat Has to Rob Three Banks in One Day (51) | **4/10** — N1 + V1 + M0 + P2 | Three banks in one day is a bigger number on a normal activity. No rule breaks, nothing impossible. |
-| 3 — Normal | First fish | GTA VI: ohnePixel's First Fish Is Only 0.8 KG (45) | **3/10** — N1 + V0 + M1 + P2 | Charming, and the 0.8 kg detail is retellable (M1) — but fishing is a normal minigame and a small first catch is the expected outcome. Nobody loses sleep over it (Test C fails). |
+| 3 — Normal | First fish | GTA VI: ohnePixel's First Fish Is Only 0.8 KG (45) | **4/10** — N1 + V0 + M1 + P2 | Charming, and the 0.8 kg detail is retellable (M1) — but fishing is a normal minigame and a small first catch is the expected outcome. Nobody loses sleep over it (Test C fails). |
 | 4 — Normal | Lucia in jail | GTA VI: Kai Cenat Meets Lucia in Jail for the First Time (56) | **4/10** — N1 + V0 + M1 + P2 | The opening every player sees. The creator's reaction is huge, but the beat is universal. Big reaction to a normal beat (§2, Test B). |
 | 5 — Purple | Alien baby | GTA VI: Nobody Expected Windah to Steal an Alien Baby (53) | **9/10** — N3 + V3 + M2 + P1* | An alien baby on a gurney in a secret bunker, carried out under red lights. *P1, not P2: the "steal" is carrying the baby out — the title's verb is stronger than the clip's action. Re-title toward "finds/carries" and it is a 10. |
 | 6 — Purple | Red Hulk | GTA VI: IShowSpeed Finds the Red Hulk and Hugs Him (50) | **8/10** — N2 + V3 + M2 + P1 | A Marvel character in a GTA VI cave who hugs back. The current title is activity-first — the §5 after-version ("Hugged the Red Hulk — He Hugged Back", 9/10) leads with the violation and scores higher. Same clip, better frame. |
@@ -262,7 +263,7 @@ Scored with §3 (N + V + M + P). All rows are one GTA VI clips channel's real vi
 
 ## 13. Sources
 
-- MrBeast "Purple Cow" interview (Theo Von, *This Past Weekend*; 99.5s clip circulated via X post by @ryangrowthh, https://x.com/ryangrowthh/status/2124459878408433851).
+- MrBeast "Purple Cow" interview — the quoted wording is verified against the *Diary of a CEO* transcript (23:02; "to go viral, you have to do something that's never been done before…"), re-checked 23 Nov 2026; the 99.5s clip circulates via X post by @ryangrowthh, https://x.com/ryangrowthh/status/2124459878408433851. Round 1 cited Theo Von's *This Past Weekend* as the interview; the same story appears on *Diary of a CEO* with identical wording, so the show attribution is not settled — the wording is what is quoted.
 - Seth Godin, *Purple Cow: Transform Your Business by Being Remarkable* (Portfolio, 2003) — origin of the concept.
 - YouTube Oct 1 2026 originality update (TeamYouTube) + reused-content policy (Help 1311392) — see the companion `shorts-zero-views-fix` skill. The reason normal-cow clips get deprioritised even with permission and credit.
 - Worked examples and table rows — one GTA VI clips channel's real clips (Nov 2026): IShowSpeed, ohnePixel, Kai Cenat, Windah Basudara, BrycexD. No example invents a clip moment.
@@ -270,4 +271,5 @@ Scored with §3 (N + V + M + P). All rows are one GTA VI clips channel's real vi
 
 ## Changelog
 
+- **v1.1.0 — 2026-11-23 (Round 2):** Re-scored 2 fresh moments (see TEST-LOG.md): rubric still discriminates (9, 5). Fixed 3 count errors found by script (Example 3 "before" title 44→45 chars; §12 row 3 total 3/10→4/10 — the sub-scores always summed to 4; §7 thumbnail line "ZERO STARS FOR SHERIFF CRASH" 4→5 words). Title length aligned to the pack standard 30–60 (was 40–60). MrBeast origin corrected: wording verified against the *Diary of a CEO* transcript, not attributed to a single show. Frontmatter description rewritten as a hook.
 - **v1.0.0 — 2026-11-23:** Universal publish version. Source skill's rubric, 3 tests, mining method, Formula P, and worked examples kept; channel-locked rules reframed as a labelled worked-example layer (§11); the 7/10 threshold explicitly marked unvalidated; uncited share-of-views numbers and unverified thumbnail stats cut; MrBeast origin corrected to the Theo Von podcast. Tested on 3 real public Shorts (see TEST-LOG.md): rubric discriminates (8, 5, 4).
