@@ -1,9 +1,10 @@
 ---
 name: shorts-zero-views-fix
-description: Diagnose why a YouTube Short gets 0 views and fix it legally — a 10-cause ladder, the Oct 1 2026 originality update, and realistic expectations, every claim tied to a source.
-version: 1.0.0
+description: Diagnose why a YouTube Short is stuck at 0 views and fix it legally — a 10-cause ladder, the Oct 1 2026 originality update, and realistic expectations from named studies, every claim tied to a source. For Shorts creators, not guesswork.
+version: 1.1.0
 author: Muhammad Saad Ranjha (Beyond Muhammad Saad)
 created: 2026-11-23
+updated: 2026-11-23
 ---
 
 # Shorts Zero-Views Fix — Diagnose Why a Short Gets 0 Views and Fix It Legally
@@ -44,7 +45,7 @@ Run top to bottom. Stop at the first hit; fix it; re-measure over days, not hour
 
 | # | Cause | Evidence | How to check |
 |---|---|---|---|
-| 1 | **Not actually a Short** — 16:9, or >3 min. Square/vertical ≤3 min, uploaded ≥15 Oct 2024 = Short. A 16:9 video never enters the Shorts feed. | FACT — Help 15424877 | Studio → Content → Shorts tab; open youtube.com/shorts/[ID] — a non-Short redirects to the watch page |
+| 1 | **Not actually a Short** — 16:9, or >3 min. Square/vertical ≤3 min, uploaded ≥15 Oct 2024 = Short. (Official Artist Channels: the same rule applies from 8 Dec 2025 — Help 15424877, re-read live 23 Nov 2026.) A 16:9 video never enters the Shorts feed. | FACT — Help 15424877 | Studio → Content → Shorts tab; open youtube.com/shorts/[ID] — a non-Short redirects to the watch page |
 | 2 | **1–3 min Short + active copyright claim = blocked globally.** "Any Short that is over one minute in duration with an active copyright claim of any type… will be blocked globally… will not be playable or recommended… no penalties to your channel." Under 60s the block does not apply. | **CONFLICTING — see §2a.** Help 15424877 (re-verified live 23 Nov 2026) still says blocked. A second Help page reportedly says otherwise. Check the Restrictions column on the actual video. | Studio → Content → Restrictions column ("Claims"). Remove claimed content, dispute if wrong, or shorten to <60s |
 | 3 | **Reused / repetitive / scraped content — reduced feed reach (Oct 2026) and/or spam removal.** See §3 — the most likely cause for a clip channel. | FACT — Oct 1 2026 TeamYouTube post; Spam Policy 2801973 §7 | Audit whether each Short adds commentary/storyline; compare Shorts-feed traffic before/after 1 Oct 2026 |
 | 4 | **Visibility: Private / Unlisted / Scheduled.** Only Public videos are recommended. | SIGNAL (high-confidence; no single Shorts-specific Help sentence found) | Studio → Content → Visibility column |
@@ -63,7 +64,7 @@ Run top to bottom. Stop at the first hit; fix it; re-measure over days, not hour
 
 **What a second Help page reportedly says:** the "Create YouTube Shorts" page (Android) reportedly states that Shorts longer than one minute with an active copyright claim "will no longer be automatically blocked and may remain playable" — checked 19 Nov 2026 by an independent guide (postnext.io). This matches a Sep 24 2026 relaxation that was reported and then apparently reverted.
 
-**Status: CONFLICTING / UNVERIFIED.** YouTube's own pages disagree as of 23 Nov 2026, and the relaxation claim could not be confirmed on the main Help page. Do **not** state either version as settled fact. Practical rule until the pages agree: treat a claim on a Short over 60 seconds as a **risk to playback and earnings** — keep the Short under 60 seconds where audio/footage could trigger a claim, or use only audio you own. **Re-check date: 2026-12-23** — re-read Help 15424877 and the Create Shorts page, and update this section.
+**Status: CONFLICTING / UNVERIFIED.** YouTube's own pages disagree as of 23 Nov 2026, and the relaxation claim could not be confirmed on the main Help page. **Round 2 re-check, 23 Nov 2026:** Help 15424877 was re-read live again today — the blocked-globally language is still present, word for word ("Any Short that is over one minute in duration with an active copyright claim of any type, including manual claims, will be blocked globally on YouTube"), and the page's FAQ repeats it. Do **not** state either version as settled fact. Practical rule until the pages agree: treat a claim on a Short over 60 seconds as a **risk to playback and earnings** — keep the Short under 60 seconds where audio/footage could trigger a claim, or use only audio you own. **Re-check date: 2026-12-23** — re-read Help 15424877 and the Create Shorts page, and update this section.
 
 ## 3. The Decisive Factor — Oct 1 2026 Originality Update + Reused-Content Policy
 
@@ -181,4 +182,5 @@ A GTA VI clips channel, ~2 weeks old, 5 subscribers, verified 22 Nov 2026 14:31 
 
 ## Changelog
 
+- **v1.1.0 — 2026-11-23 (Round 2):** Help 15424877 re-read live again (23 Nov 2026) — the blocked-globally language is still present word for word; §2a updated with the re-confirmation, re-check date stays 2026-12-23. Added the Official Artist Channels date (8 Dec 2025) to Cause 1. Re-tested the ladder on 2 fresh scenarios (see TEST-LOG.md): both reach the right diagnosis. Frontmatter description rewritten as a hook.
 - **v1.0.0 — 2026-11-23:** Universal publish version. Channel ground truth moved to dated Appendix A; the fix's voice requirement generalised from one channel's host to "the creator's own voice/commentary"; Content ID Sep 24 2026 relaxation re-checked and marked CONFLICTING with a 2026-12-23 re-check date (Help 15424877 re-read live 23 Nov 2026 still says blocked); vidIQ sample corrected to 448,413 channels (Shorts + long-form cohorts); SocialInsider figures re-verified with a noise caveat and an OverseerOS counterweight added; engaged-vs-public views distinction added. Ladder tested on 2 scenarios (see TEST-LOG.md): both reach the right diagnosis.
