@@ -1,6 +1,6 @@
 ---
 name: color-grading
-description: Grade every reel identically with one locked ffmpeg-only chain at final encode, verified numerically against signalstats targets — Hald LUT freeze, Rec.709 delivery.
+description: Give every reel the same rich, platform-proof colour grade with one locked ffmpeg-only chain — Hald LUT freeze and a numeric QC gate included, so your brand palette survives compression instead of washing out.
 version: 1.0.0
 author: Muhammad Saad Ranjha (Beyond Muhammad Saad)
 created: 2026-11-23
@@ -120,7 +120,13 @@ buggy one ΔYAVG 1.41.)
 # Build once (curve identical to the master chain, point for point):
 ffmpeg -f lavfi -i haldclutsrc=8 -vf "curves=master='0/0 0.25/0.21 0.5/0.50 0.75/0.79 0.9/0.87 1/0.94':interp=pchip,eq=saturation=1.00" -frames:v 1 grade_hald_v1.png
 # Apply (lossless intermediates only):
-ffmpeg -i in.mp4 -i grade_hald_v1.png -filter_complex "[0][1]haldclut=interp=tetrahedral,setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709:range=tv" -c:v libx264 -crf 16 -preset slow -movflags +faststart out.mp4
+# The LUT freezes ONLY the colour transform (curves + eq). Deband and
+# grain are per-frame stages no LUT can hold, so they still run here, in
+# the same order as the master chain. (An earlier version of this skill
+# applied the bare LUT with no deband/noise — those reels shipped with
+# no grain and no debanding. Fixed 23 Nov 2026; verified: the full
+# apply below sits ΔYAVG 0.13 from the direct chain.)
+ffmpeg -i in.mp4 -i grade_hald_v1.png -filter_complex "[0]deband=1thr=0.02:2thr=0.02:3thr=0.02:4thr=0.02:range=16:blur=1,noise=alls=5:allf=t+u[pre];[pre][1]haldclut=interp=tetrahedral,setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709:range=tv" -c:v libx264 -crf 16 -preset slow -movflags +faststart out.mp4
 ```
 - Name + date every LUT version; never edit one in place. LUTs are dumb
   maps (no scene adaptation) that bake in any clipping — that's why the
@@ -149,8 +155,12 @@ to solve a problem the reel doesn't have. For face inserts, ffmpeg has no
 skin qualifier and no hue-selective tool, so the only defence is order +
 restraint: white-balance FIRST with small `colorbalance` moves (±0.05),
 saturation LAST and ≤1.05, prefer vibrance over saturation. QC:
-`histogram=mode=color2` — the skin cluster's angle must not move between
+`vectorscope=mode=color2` — the skin cluster's angle must not move between
 balanced and final frames; only its distance from centre may change.
+(The skill previously wrote `histogram=mode=color2` — wrong filter:
+ffmpeg 8.1.2 rejects it, "Option 'mode' not found" for histogram. The
+`mode=color2` option belongs to the `vectorscope` filter, which is what
+shows the skin cluster's angle; verified 23 Nov 2026.)
 
 ## NUMERIC QC GATE (delivery file, every reel — no eyeballing)
 ```
