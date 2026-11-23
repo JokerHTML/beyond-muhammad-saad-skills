@@ -1,9 +1,10 @@
 ---
 name: youtube-shorts-seo
-description: Build a complete, search-ready SEO package for a YouTube Short — keyword, title, description, tags, hashtags, hook, thumbnail, first comment and publish checklist — with hard gates that stop a publish when any check fails.
-version: 1.0.0
+description: Build a search-ready SEO package for any YouTube Short — keyword, title, description, tags, hashtags, hook, thumbnail and first comment — with hard gates that stop a publish when any check fails. For Shorts creators who want to be found in search, not just fed to the feed.
+version: 1.1.0
 author: Muhammad Saad Ranjha (Beyond Muhammad Saad)
 created: 2026-11-23
+updated: 2026-11-23
 ---
 
 # YouTube Shorts SEO
@@ -23,7 +24,7 @@ YouTube publishes no search volumes, no ranking weights and no ideal video lengt
 
 **SEO is the smaller door.** (REPORTED, Metricool 2026: 799,718 videos, 71,177 accounts.) Shorts views by source in that study: feed 61.5% · subscribers 11.3% · search 8.8% · Related 5.8% · playlist 5.1% · channel 3.1% · hashtags 0.03%. Caveat: whether that split is Shorts-only or all formats is disputed — HypeNest (2026) reads the same Metricool data as all-format. Treat the split as directional, not a Shorts-only fact. Either way, a perfect SEO package fights over roughly a tenth of views. The hook and retention fight over the rest. Do the SEO properly, then spend the remaining effort on the first 3 seconds.
 
-**SEO cannot fix the originality risk.** (FACT, YouTube Community, 1 Oct 2026 Shorts originality update.) Recommendations prioritise original content and reduce reach of content re-uploaded from other creators "without adding anything of your own". A credit line in the description does NOT satisfy this — transformation must be in the video (hook, subtitles, curation, editing; narration for compilations). Never present SEO as protection against a reused-content flag or a Content ID claim. (REPORTED, Revid 2026: a Short over 1 minute with any active Content ID claim is blocked worldwide.)
+**SEO cannot fix the originality risk.** (FACT, YouTube Community, 1 Oct 2026 Shorts originality update.) Recommendations prioritise original content and reduce reach of content re-uploaded from other creators "without adding anything of your own". A credit line in the description does NOT satisfy this — transformation must be in the video (hook, subtitles, curation, editing; narration for compilations). Never present SEO as protection against a reused-content flag or a Content ID claim. (FACT, Help answer/15424877, re-read live 23 Nov 2026: a Short over 1 minute with any active copyright claim is blocked globally — not playable, not recommended, not eligible for monetisation.)
 
 **Spelling: title uses the official name, everywhere else carries the search spelling.** The search-dominant spelling of a game is often not its official one (e.g. searchers type "GTA 6", the official title is "GTA VI"). Rule: the **title uses the official spelling** — it is the brand decision and it stands; do not "fix" it to chase search. The search spelling is carried where the rules allow it: description synonyms, the Tags field, and hashtags. See Appendix A for the worked example.
 
@@ -43,7 +44,7 @@ YouTube publishes no search volumes, no ranking weights and no ideal video lengt
 
 ### 2.1 Hard limits (FACT)
 
-- Title limit: **100 characters**. Mobile truncates around 60–70 chars in the feed; roughly 40 chars show in the Shorts feed overlay.
+- Title limit: **100 characters**. Mobile truncates around 60–70 chars in the feed; roughly 40 chars show in the Shorts feed overlay (no published figure — varies by device).
 - Put the most important words near the beginning; save episode numbers and branding for the end (Help, "Thumbnail & title tips").
 - Title must accurately represent the video — if not, viewers stop watching, "which can impact discoverability" (Help). No "full stream", "full gameplay", no moment absent from the clip. (VERIFIED, Spam Policy: a title offering a full sports match on a clip is YouTube's own example of misleading metadata.)
 
@@ -59,7 +60,7 @@ YouTube publishes no search volumes, no ranking weights and no ideal video lengt
 - A number at the START (12.8%) beats a number anywhere (10.6%). Hype words describing something concrete (13.4%) beat hype as decoration.
 - Below average — avoid: hashtag in the title (**8.0%**, worst habit measured), whole title in CAPS (9.0%), exclamation marks (9.2%), ellipsis "…" (9.3%), question marks (9.6% — turn the question into a "Why" statement), emojis (9.6%, no effect), "How to" (9.7%).
 - Curiosity language ("what nobody tells you", "the real reason") is the only positive signal that transfers across all niches and channel sizes (AIR).
-- At most one of each: one bracketed element, one number, one emoji (at the end), one ALL-CAPS word, 1–2 power words. YouTube's own line is "Limit ALL CAPS and emoji" (FACT).
+- At most one of each: one bracketed element, one number, one ALL-CAPS word, 1–2 power words. No emoji in the title — Returbe found no effect (9.6%), and YouTube's own line is "Limit ALL CAPS and emoji" (FACT). (Round 2 fix: an earlier draft of this line allowed "one emoji (at the end)", contradicting the no-emoji gate in §2.4 and P2.)
 
 ### 2.4 Title formulas — 8, deduped from 16 across the sources
 
@@ -190,8 +191,8 @@ Notes: chapters need ≥3 timestamps, first at 0:00, each ≥10 seconds apart (s
 ## 7. Thumbnails
 
 - **Shorts: AUTO until the channel is verified.** Custom Shorts thumbnails can only be uploaded from a computer by verified accounts (REPORTED, Revid). Until verification is done, the first frame IS the thumbnail in the feed — frame 1 must carry the reaction + hook text, not a black frame or a menu screen. Do not delay an upload for a custom thumbnail.
-- **When verification lands (upgrade, not blocker):** custom Shorts thumbnail 1080×1920 (recommended 2160×3840), 9:16, JPG/PNG under 2 MB, Studio on a computer. Face/reaction large + ≤5 words of bold text that **extend (not duplicate) the title** — title and thumbnail are one pairing; writing them separately is why half of a click surface says the same thing twice (adopted from yt-package).
-- **Long-form (compilations):** 1280×720, 16:9, under 2 MB, JPG/PNG (FACT, Help). vidIQ's 500-breakout study (REPORTED, Jun 2026): 69% face, 56% high contrast, 89% at least one; face in 80% of the top 50; median overlay text 5 words. One focal point, 3–5 words, face ~¼–⅓ of frame, preview at ~320px wide, keep text out of the bottom-right badge zone and the edges.
+- **When verification lands (upgrade, not blocker):** custom Shorts thumbnail 1080×1920 (YouTube recommends 2160×3840 for Shorts), 9:16, JPG/PNG, under 2 MB from the mobile app / 50 MB from a computer — custom Shorts thumbnails only in Studio on a computer, verified account required (FACT, Help answer/72431, re-read live 23 Nov 2026). Face/reaction large + ≤5 words of bold text that **extend (not duplicate) the title** — title and thumbnail are one pairing; writing them separately is why half of a click surface says the same thing twice (adopted from yt-package).
+- **Long-form (compilations):** 3840×2160 recommended (1280×720 still valid, above the 640 px minimum), 16:9, JPG/PNG, under 2 MB mobile / 50 MB desktop (FACT, Help answer/72431, re-read live 23 Nov 2026 — the old "1280×720 recommended" figure is stale). vidIQ's 500-breakout study (REPORTED, Jun 2026): 69% face, 56% high contrast, 89% at least one; face in 80% of the top 50; median overlay text 5 words. One focal point, 3–5 words, face ~¼–⅓ of frame, preview at ~320px wide, keep text out of the bottom-right badge zone and the edges.
 - **CTR reality:** half of all videos sit at 2–10% CTR; gaming 8–15% (REPORTED, thumbn.so citing YouTube). YouTube optimises for expected watch time per impression, not CTR alone — a clickbait thumbnail that produces low watch time gets fewer recommendations. Judge Shorts by viewed-vs-swiped-away and avg % viewed — CTR is the wrong metric for Shorts (no thumbnail to click in the feed).
 
 ## 8. First comment + pin
