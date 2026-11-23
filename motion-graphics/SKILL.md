@@ -1,6 +1,6 @@
 ---
 name: motion-graphics
-description: Animate text and graphics in reels so every movement explains, emphasizes, or guides attention — locked easing tokens, phase-list hero builds, stagger, reveals, six-transition grammar, per-scene timing budgets.
+description: Make text and graphics move with purpose in any reel — five locked easing tokens, phase-list hero builds, and timing budgets that keep every animation explaining, emphasizing, or guiding the eye.
 version: 1.0.0
 author: Muhammad Saad Ranjha (Beyond Muhammad Saad)
 created: 2026-11-23
@@ -57,7 +57,8 @@ the whole series: series consistency = token consistency.
 2. **Main action:** 8–12f on `enter`/`hero_enter`.
 3. **Overshoot:** pass the rest point by 6–10px (or scale 1.03–1.08), 2–3f — via `pop` or the phase list.
 4. **Settle:** 3–6f decaying to exact rest.
-5. **Hold:** ≥12–18f still before the next idea. Total hero build ≈18–24f.
+5. **Hold:** ≥12–18f still before the next idea. Total hero build ≈18–24f
+   (build phases only — hold is additional, per §TIMING BUDGETS).
 Implement as a phase list per element:
 `[(3, 0, -10, enter), (10, -10, +8, enter), (5, +8, 0, enter)]`,
 sampled per global frame. A single Back curve cannot anticipate — use
@@ -192,6 +193,21 @@ At 60 fps, double the frame counts — do not halve the durations. At
 - Reading floor: an information-bearing word gets ≥9f on screen;
   on-screen informational text runs at **60–90 wpm** even when the VO
   runs 150 wpm — show phrases, not every spoken word.
+- **Reconciling the two numbers (fixed 23 Nov 2026 — they conflicted as
+  written):** `word_count × 15f` at 30 fps is 0.5 s/word = 120 wpm,
+  which is FASTER than the 60–90 wpm reading floor (20–30f/word).
+  The two rates apply to different cases, and the checker must know
+  which one governs the scene:
+  - **VO-matched text (the 15f/word budget):** the voiceover speaks the
+    same words the viewer sees — the viewer skims, not reads. The
+    15f/word floor holds.
+  - **Standalone text (the 60–90 wpm floor):** text the viewer must read
+    with no matching VO — use **20–30f/word** (20f = 90 wpm, the fastest
+    standalone rate). A scene whose on-screen text carries information
+    the VO does not speak fails the gate at 15f/word.
+  - The ≥9f per-word figure is a VISIBILITY floor for a single
+    emphasized word (a keyword, a number flashing on), not a reading
+    rate — never use it to justify a fast scene.
 - Reel's final phrase holds a full beat longer than any other hold.
 
 ## QUALITY RULES
@@ -216,8 +232,9 @@ At 60 fps, double the frame counts — do not halve the durations. At
   frame, settle frame, mid-stagger frame — values must match the phase
   list exactly.
 - Count simultaneously-moving elements on 5 random frames: ≤⅓.
-- Every scene's hold ≥ word_count × 15f — verify from the cue sheet,
-  not by eye.
+- Every scene's hold ≥ word_count × 15f for VO-matched text, or
+  ≥ word_count × 20f for standalone text — verify from the cue sheet,
+  not by eye (see the §TIMING BUDGETS reconciliation).
 
 ## STOP CONDITIONS
 - Stop if a scene needs a 7th transition type or a new easing curve to
